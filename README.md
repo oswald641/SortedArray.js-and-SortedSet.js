@@ -13,34 +13,34 @@ Personally developed and used to solve [**LeetCode 2349. Design a Number Contain
 
 
 ## constructor
-**Parameter:** A custom compare function (optional)
-**Returns:** An instance of **SortedArray** or **SortedSet**
+**Parameter:** A custom compare function (optional)\
+**Returns:** An instance of **SortedArray** or **SortedSet**\
 **Notes:** If no function is passed, the default comparison will rank numbers in ascending order
 
 ## size
-**Parameter:** None
+**Parameter:** None\
 **Returns:** The size of the **SortedArray** or **SortedSet**
 
 ## insert
-**Parameter:** Value to be inserted
-**Returns:** The same **SortedArray** or **SortedSet** on which insert was used on
-**Time Complexity:** O(n + log(n))
+**Parameter:** Value to be inserted\
+**Returns:** The same **SortedArray** or **SortedSet** on which insert was used on\
+**Time Complexity:** O(n + log(n))\
 **Notes:** The insert is done using a **binary search** [O(log(n)] to find an index where the values should be inserted and an **Array.splice()** [depends on js implementation, usually O(n)] to insert the value.
 
 ## remove
-**Parameter:** Value to be removed
-**Returns:** The same **SortedArray** or **SortedSet** on which remove was used on
-**Time Complexity:** O(n + log(n))
+**Parameter:** Value to be removed\
+**Returns:** The same **SortedArray** or **SortedSet** on which remove was used on\
+**Time Complexity:** O(n + log(n))\
 **Notes:** The remove is done using a **binary search** [O(log(n)] to find an index where the values should be removed and an **Array.splice()** [depends on js implementation, usually O(n)] to remove the value.
 
 ## get
-**Parameter:** Index of the array/set
-**Returns:** Element in **SortedArray** or **SortedSet** at the position passed as argument
+**Parameter:** Index of the array/set\
+**Returns:** Element in **SortedArray** or **SortedSet** at the position passed as argument\
 **Time Complexity:** O(1)
 
 ## indexOf
-**Parameter:** Value to know the index of
-**Returns:** Index of the first element found (the only one for a **SortedSet**) or -1 if the element was not found
+**Parameter:** Value to know the index of\
+**Returns:** Index of the first element found (the only one for a **SortedSet**) or -1 if the element was not found\
 **Time Complexity:** O(log(n))
 
 # Examples
